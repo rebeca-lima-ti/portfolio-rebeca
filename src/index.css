@@ -14,6 +14,12 @@ body {
 
 @layer base {
   :root {
+    /* --choco:   #231416;
+    --catawba: #753b41;
+    --tuscan:  #784a4a;
+    --lilac:   #b89da2;
+    --ribbon:  #dfb0bb;
+    --pearl:   #e5dcde; */
     --choco:   #231416;
     --catawba: #753b41;
     --tuscan:  #784a4a;

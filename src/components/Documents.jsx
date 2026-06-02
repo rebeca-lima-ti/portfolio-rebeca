@@ -6,23 +6,38 @@ const documents = [
       "Documentação técnica do projeto de Aprendizado por Projetos Integrados desenvolvido na Fatec SJC. Inclui levantamento de requisitos, modelagem de banco de dados e histórico de sprints da equipe Chronos.",
     institution: "Fatec Profº Jessen Vidal",
     year: "2025",
-    status: "Em andamento",
-    statusOk: false,
+    status: " Concluído",
+    statusOk: true,
     icon: "📄",
-    link: "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025",
+    link: "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025/blob/main/README.md",
     linkLabel: "Ver no GitHub",
   },
-  // Adicione TCC, artigos e demais trabalhos aqui conforme forem produzidos:
-  // {
-  //   type: "TCC",
-  //   title: "Título do Trabalho",
-  //   description: "Resumo do trabalho.",
-  //   institution: "Fatec SJC",
-  //   year: "20XX",
-  //   status: "Em andamento",
-  //   statusOk: false,
-  //   icon: "🎓",
-  // },
+  {
+    type: "Relatório Técnico",
+    title: "Relatório de API – 2º Semestre DSM",
+    description:
+      "Documentação técnica do projeto de Aprendizado por Projetos Integrados desenvolvido na Fatec SJC. Inclui levantamento de requisitos, modelagem de banco de dados e histórico de sprints da equipe Chronos.",
+    institution: "Fatec Profº Jessen Vidal",
+    year: "2025",
+    status: "Concluído",
+    statusOk: true,
+    icon: "📄",
+    link: "https://github.com/Team-Chronos/API-DSM-2SEMESTRE-2025/blob/main/README.md",
+    linkLabel: "Ver no GitHub",
+  },
+  {
+    type: "Relatório Técnico",
+    title: "Relatório de API – 3º Semestre DSM",
+    description:
+      "Documentação técnica do projeto de Aprendizado por Projetos Integrados desenvolvido na Fatec SJC. Inclui levantamento de requisitos, modelagem de banco de dados e histórico de sprints da equipe Java The Hutt.",
+    institution: "Fatec Profº Jessen Vidal",
+    year: "2026",
+    status: "Concluído",
+    statusOk: true,
+    icon: "📄",
+    link: "https://github.com/fatec-api/java-the-hutt/blob/main/README.md",
+    linkLabel: "Ver no GitHub",
+  },
 ];
 
 export default function Documents() {
