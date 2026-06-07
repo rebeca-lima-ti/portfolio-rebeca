@@ -99,10 +99,10 @@ export default function Events() {
 	const col1 = isMultiColumn ? items.slice(0, firstColCount) : items;
 	const col2 = isMultiColumn ? items.slice(firstColCount) : [];
 	return (
-		<section id="events" className="py-24 bg-base-200 relative overflow-hidden">
+		<section id="events" className="py-24 bg-purple relative overflow-hidden">
 			<div
 				className="absolute top-0 left-0 right-0 h-px opacity-20"
-				style={{ background: "linear-gradient(90deg, transparent, #dfb0bb, transparent)" }}
+				style={{ background: "linear-gradient(90deg, transparent, #FBF9FF, transparent)" }}
 			/>
 
 			<div className="container mx-auto px-6 max-w-5xl">
@@ -124,14 +124,14 @@ export default function Events() {
 								<div className="flex flex-col gap-5">
 									{col1.map((ev, i) => (
 										ev.isPlaceholder ? (
-											<div key={`ph-1-${i}`} className="card bg-base-300/40 border border-dashed border-catawba/20">
+											<div key={`ph-1-${i}`} className="card bg-accent/40 border border-dashed border-catawba/20">
 												<div className="card-body p-5 items-center text-center gap-2">
 													<span className="text-2xl opacity-40">📅</span>
 													<p className="text-pearl/30 text-xs">Próximas participações<br />serão adicionadas aqui</p>
 												</div>
 											</div>
 										) : (
-											<div key={`c1-${i}`} className="card bg-base-300 border border-catawba/20 hover:border-catawba/50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+											<div key={`c1-${i}`} className="card bg-accent border border-catawba/20 hover:border-catawba/50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
 												<div className="card-body p-5 gap-3">
 													<div className="flex items-start gap-4">
 														<span className="text-3xl flex-shrink-0 mt-0.5">{ev.icon}</span>
@@ -162,14 +162,14 @@ export default function Events() {
 								<div className="flex flex-col gap-5">
 									{col2.map((ev, i) => (
 										ev.isPlaceholder ? (
-											<div key={`ph-2-${i}`} className="card bg-base-300/40 border border-dashed border-catawba/20">
+											<div key={`ph-2-${i}`} className="card bg-accent/40 border border-dashed border-catawba/20">
 												<div className="card-body p-5 items-center text-center gap-2">
 													<span className="text-2xl opacity-40">📅</span>
 													<p className="text-pearl/30 text-xs">Próximas participações<br />serão adicionadas aqui</p>
 												</div>
 											</div>
 										) : (
-											<div key={`c2-${i}`} className="card bg-base-300 border border-catawba/20 hover:border-catawba/50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+											<div key={`c2-${i}`} className="card bg-accent border border-catawba/20 hover:border-catawba/50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
 												<div className="card-body p-5 gap-3">
 													<div className="flex items-start gap-4">
 														<span className="text-3xl flex-shrink-0 mt-0.5">{ev.icon}</span>
@@ -202,14 +202,14 @@ export default function Events() {
 							<div className="flex flex-col gap-5">
 								{items.map((ev, i) => (
 									ev.isPlaceholder ? (
-										<div key={`ph-${i}`} className="card bg-base-300/40 border border-dashed border-catawba/20">
+										<div key={`ph-${i}`} className="card accent/40 border border-dashed border-catawba/20">
 											<div className="card-body p-5 items-center text-center gap-2">
 												<span className="text-2xl opacity-40">📅</span>
 												<p className="text-pearl/30 text-xs">Próximas participações<br />serão adicionadas aqui</p>
 											</div>
 										</div>
 									) : (
-										<div key={i} className="card bg-base-300 border border-catawba/20 hover:border-catawba/50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
+										<div key={i} className="card bg-accent border border-catawba/20 hover:border-catawba/50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg">
 											<div className="card-body p-5 gap-3">
 												<div className="flex items-start gap-4">
 													<span className="text-3xl flex-shrink-0 mt-0.5">{ev.icon}</span>
@@ -240,9 +240,8 @@ export default function Events() {
 						)}
 					</div>
 
-					{/* What I'm looking for (moved below events) */}
 					<div className="flex flex-col gap-6">
-						<div className="card bg-base-300 border border-catawba/20 shadow-lg">
+						<div className="card bg-[#21223b] border border-catawba/20 shadow-lg">
 							<div className="card-body p-6 gap-4">
 								<h3 className="font-cinzel text-ribbon text-lg">Quero participar de...</h3>
 								<p className="text-pearl/60 text-sm leading-relaxed">

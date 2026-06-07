@@ -29,9 +29,9 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-choco">
-        <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse 80% 60% at 60% 40%, #784a4a55 0%, transparent 70%)" }} />
-        <div className="absolute inset-0 opacity-20" style={{ background: "radial-gradient(ellipse 50% 50% at 20% 80%, #753b4140 0%, transparent 70%)" }} />
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "linear-gradient(#dfb0bb 1px, transparent 1px), linear-gradient(90deg, #dfb0bb 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
+        <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse 80% 60% at 60% 40%, #9395D355 0%, transparent 70%)" }} />
+        <div className="absolute inset-0 opacity-20" style={{ background: "radial-gradient(ellipse 50% 50% at 20% 80%, #6a6c9740 0%, transparent 70%)" }} />
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "linear-gradient(#FBF9FF 1px, transparent 1px), linear-gradient(90deg, #FBF9FF 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-32 flex flex-col-reverse lg:flex-row items-center justify-between gap-16">

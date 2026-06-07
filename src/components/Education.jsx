@@ -38,7 +38,7 @@ export default function Education() {
       {/* Decorative line */}
       <div
         className="absolute left-0 top-0 bottom-0 w-px opacity-10 hidden lg:block"
-        style={{ background: "linear-gradient(to bottom, transparent, #dfb0bb, transparent)", left: "10%" }}
+        style={{ background: "linear-gradient(to bottom, transparent, #FBF9FF, transparent)", left: "10%" }}
       />
 
       <div className="container mx-auto px-6 max-w-5xl">
@@ -67,7 +67,7 @@ export default function Education() {
                 </div>
 
                 {/* Card */}
-                <div className="card bg-base-200 border border-catawba/20 hover:border-catawba/50 shadow-lg hover:shadow-catawba/10 transition-all duration-300 flex-1 group-hover:-translate-y-0.5">
+                <div className="card border border-catawba/20 hover:border-catawba/50 shadow-lg hover:shadow-catawba/10 transition-all duration-300 flex-1 group-hover:-translate-y-0.5">
                   <div className="card-body p-6 gap-3">
                     <div className="flex flex-wrap items-start justify-between gap-3">
                       <div>

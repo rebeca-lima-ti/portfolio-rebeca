@@ -53,9 +53,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-base-200 relative overflow-hidden">
+    <section id="projects" className="py-24 bg-accent relative overflow-hidden">
       <div className="absolute inset-0 opacity-5 pointer-events-none"
-        style={{ backgroundImage: "radial-gradient(circle at 80% 50%, #753b41 0%, transparent 60%)" }} />
+        style={{ backgroundImage: "radial-gradient(circle at 80% 50%, #6a6c97 0%, transparent 60%)" }} />
 
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
@@ -66,7 +66,7 @@ export default function Projects() {
 
         <div className="flex flex-col gap-10">
           {projects.map((p, i) => (
-            <div key={i} className="card bg-base-300 border border-catawba/20 hover:border-catawba/50 shadow-xl shadow-black/20 transition-all duration-300 overflow-hidden">
+            <div key={i} className="card bg-primary-content border border-catawba/20 hover:border-catawba/50 shadow-xl shadow-black/20 transition-all duration-300 overflow-hidden">
               {/* Header com imagem */}
               <div className="flex flex-col lg:flex-row">
                 {/* <div className="relative lg:w-80 xl:w-96 flex-shrink-0 overflow-hidden">

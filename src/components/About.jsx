@@ -35,9 +35,9 @@ const hardSkills = [
 
 export default function About() {
 	return (
-		<section id="about" className="py-24 bg-base-200 relative overflow-hidden">
+		<section id="about" className="py-24 bg-accent relative overflow-hidden">
 			<div className="absolute top-0 right-0 w-96 h-96 opacity-10 pointer-events-none"
-				style={{ background: "radial-gradient(circle, #753b41 0%, transparent 70%)", transform: "translate(30%, -30%)" }} />
+				style={{ background: "radial-gradient(circle, #6a6c97 0%, transparent 70%)", transform: "translate(30%, -30%)" }} />
 
 			<div className="container mx-auto px-6 max-w-6xl">
 				<div className="text-center mb-16">
@@ -48,7 +48,7 @@ export default function About() {
 
 				<div className="grid lg:grid-cols-2 gap-10 items-start">
 					{/* Bio card */}
-					<div className="card bg-base-300 border border-catawba/20 shadow-xl shadow-black/30">
+					<div className="card bg-purple border border-catawba/20 shadow-xl shadow-black/30">
 						<div className="card-body gap-4">
 							<div className="flex items-center gap-3 mb-1">
 								<div className="avatar placeholder">
@@ -70,7 +70,7 @@ export default function About() {
 								Tenho interesse em desenvolvimento web, design de interfaces e banco de dados. Busco construir soluções que unam boa usabilidade e código de qualidade.
 							</p>
 
-							<div className="divider my-1" style={{ borderColor: "#753b4133" }} />
+							<div className="divider my-1" style={{ borderColor: "#6a6c9733" }} />
 
 							{/* Objetivo profissional */}
 							<div>
@@ -95,7 +95,7 @@ export default function About() {
 							<h3 className="font-cinzel text-ribbon text-xl mb-4">Hard Skills</h3>
 							<div className="flex flex-col gap-3">
 								{hardSkills.map((group) => (
-									<div key={group.category} className="card bg-base-300 border border-catawba/15 shadow-sm">
+									<div key={group.category} className="card bg-purple border border-catawba/15 shadow-sm">
 										<div className="card-body p-4 gap-2">
 											<p className="text-lilac text-xs uppercase tracking-widest font-medium flex items-center gap-2">
 												<span>{group.icon}</span>{group.category}
@@ -118,7 +118,7 @@ export default function About() {
 							<h3 className="font-cinzel text-ribbon text-xl mb-4">Soft Skills</h3>
 							<div className="flex flex-wrap gap-2">
 								{softSkills.map((s) => (
-									<span key={s} className="badge bg-base-300 text-pearl/80 border-catawba/20 text-xs py-3 gap-1.5">
+									<span key={s} className="badge bg-purple text-pearl/80 border-catawba/20 text-xs py-3 gap-1.5">
 										<span className="w-1.5 h-1.5 rounded-full bg-ribbon inline-block flex-shrink-0" />
 										{s}
 									</span>

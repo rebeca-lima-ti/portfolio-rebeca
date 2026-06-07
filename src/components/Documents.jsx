@@ -45,7 +45,7 @@ export default function Documents() {
     <section id="documents" className="py-24 bg-choco relative overflow-hidden">
       <div
         className="absolute right-0 bottom-0 w-64 h-64 opacity-10 pointer-events-none"
-        style={{ background: "radial-gradient(circle, #784a4a 0%, transparent 70%)", transform: "translate(20%, 20%)" }}
+        style={{ background: "radial-gradient(circle, #9395D3 0%, transparent 70%)", transform: "translate(20%, 20%)" }}
       />
 
       <div className="container mx-auto px-6 max-w-5xl">
@@ -62,7 +62,7 @@ export default function Documents() {
           {documents.map((doc, i) => (
             <div
               key={i}
-              className="card bg-base-200 border border-catawba/20 hover:border-catawba/50 transition-all duration-300 shadow-lg"
+              className="card bg-[#21223b] border border-catawba/20 hover:border-catawba/50 transition-all duration-300 shadow-lg"
             >
               <div className="card-body p-6 gap-4">
                 <div className="flex items-start gap-4">

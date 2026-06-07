@@ -31,7 +31,7 @@ export default function Certificates() {
     <section id="certificates" className="py-24 bg-choco relative overflow-hidden">
       <div
         className="absolute bottom-0 left-0 w-80 h-80 opacity-10 pointer-events-none"
-        style={{ background: "radial-gradient(circle, #753b41 0%, transparent 70%)", transform: "translate(-30%, 30%)" }}
+        style={{ background: "radial-gradient(circle, #6a6c97 0%, transparent 70%)", transform: "translate(-30%, 30%)" }}
       />
 
       <div className="container mx-auto px-6 max-w-5xl">
@@ -48,7 +48,7 @@ export default function Certificates() {
           {certificates.map((cert, i) => (
             <div
               key={i}
-              className="card bg-base-200 border border-catawba/20 hover:border-catawba/50 hover:-translate-y-1 transition-all duration-300 shadow-lg"
+              className="card bg-purple border border-catawba/20 hover:border-catawba/50 hover:-translate-y-1 transition-all duration-300 shadow-lg"
             >
               <div className="card-body p-5 gap-3">
                 <div className="flex items-start justify-between gap-2">
