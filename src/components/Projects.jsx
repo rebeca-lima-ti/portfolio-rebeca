@@ -1,5 +1,29 @@
 import apiProjImg from "../assets/api-proj.png";
 
+const getBadgeDescription = (project, badge) => {
+  const baseDescriptions = {
+    Python: `No projeto "${project.title}", essa badge representa o uso de Python para analisar dados, automatizar tarefas e apoiar a lógica do sistema.`,
+    SQL: `No projeto "${project.title}", essa badge mostra a utilização de SQL para consultar, organizar e manter os dados no banco.`,
+    GitHub: `No projeto "${project.title}", essa badge indica o uso do GitHub para versionar o código, acompanhar alterações e colaborar com a equipe.`,
+    Scrum: `No projeto "${project.title}", essa badge representa a aplicação da metodologia Scrum para planejar entregas em sprints e acompanhar o progresso.`,
+    "Banco de Dados": `No projeto "${project.title}", essa badge refere-se à modelagem e manutenção da estrutura que armazena os dados da aplicação.`,
+    "Trabalho em equipe": `No projeto "${project.title}", essa badge destaca a colaboração entre os membros da equipe para dividir tarefas, alinhar decisões e integrar soluções.`,
+    "Resolução de problemas": `No projeto "${project.title}", essa badge representa a capacidade de investigar desafios técnicos e encontrar soluções viáveis para o sistema.`,
+    React: `No projeto "${project.title}", essa badge aponta o uso do React para criar interfaces interativas e componentes reutilizáveis.`,
+    TypeScript: `No projeto "${project.title}", essa badge mostra o uso de TypeScript para deixar o desenvolvimento mais seguro e organizado com tipagem.`,
+    "Node.js": `No projeto "${project.title}", essa badge representa o uso do Node.js para desenvolver a parte backend e os serviços da aplicação.`,
+    MySQL: `No projeto "${project.title}", essa badge indica a utilização do MySQL como banco de dados relacional da aplicação.`,
+    Bootstrap: `No projeto "${project.title}", essa badge mostra o uso do Bootstrap para criar uma interface responsiva e visualmente consistente.`,
+    Java: `No projeto "${project.title}", essa badge representa o uso de Java na construção da lógica e dos serviços do sistema.`,
+    "Spring Boot": `No projeto "${project.title}", essa badge aponta o uso do Spring Boot para acelerar o desenvolvimento do backend da aplicação.`,
+    Docker: `No projeto "${project.title}", essa badge destaca o uso do Docker para padronizar a execução da aplicação em diferentes ambientes.`,
+    "Tailwind CSS": `No projeto "${project.title}", essa badge mostra o uso do Tailwind CSS para estilizar a interface com rapidez e flexibilidade.`,
+    Keycloak: `No projeto "${project.title}", essa badge representa o uso do Keycloak para autenticação e controle de acesso dos usuários.`,
+  };
+
+  return baseDescriptions[badge] || `Essa badge marcou a participação de ${badge} no projeto "${project.title}".`;
+};
+
 const projects = [
   {
     title: "Acompanhamento do Desempenho de Municípios do Estado de São Paulo – 1º Semestre DSM",
@@ -11,7 +35,7 @@ const projects = [
     problem: "Falta de uma ferramenta acessível para monitorar as tendências do mercado de importação e exportação no estado de São Paulo, dificultando a análise de dados por pequenas empresas e pesquisadores.",
     objective: "Desenvolver um sistema web para visualização e análise de dados de importação e exportação no estado de São Paulo, com dashboards interativos e relatórios periódicos.",
     methodology: "Metodologia Scrum com sprints quinzenais. A equipe Chronos é composta por Product Owner, Scrum Master e Dev Team, utilizando GitHub para controle de versão e Jira para gestão de tarefas.",
-    technologies: ["Python", "SQL", "GitHub", "Scrum", "Banco de Dados", "Trabalho em equipe", "Resolução de problemas"],
+    badges: ["Python", "SQL", "GitHub", "Scrum", "Banco de Dados", "Trabalho em equipe", "Resolução de problemas"],
     challenges: "Organização e tratamento de grandes volumes de dados públicos em formato inconsistente, exigindo processos de limpeza e normalização antes da inserção no banco.",
     results: "Projeto completo (1º semestre). Estrutura do banco de dados modelada e todas as telas do sistema em funcionamento com gráficos e busca funcionais. Mais informações no repositório GitHub.",
     role: "Dev Team — responsável pela modelagem e manutenção do banco de dados e atualizações periódicas no repositório.",
@@ -26,7 +50,7 @@ const projects = [
     problem: "Falta de uma plataforma única que centralize e padronize processos administrativos, comerciais e operacionais, dificultando a visualização de informações, notificações e relatórios.",
     objective: "Desenvolver uma plataforma integrada para gestão administrativa, comercial e operacional que centralize dados, processos e relatórios, garantindo maior eficiência e controle para a empresa.",
     methodology: "Metodologia Scrum com sprints de 3 semanas. A equipe Chronos utiliza Jira para gestão de tarefas, GitHub para controle de versão, e segue Definition of Ready (DoR) e Definition of Done (DoD) estabelecidas.",
-    technologies: ["React", "TypeScript", "Node.js", "MySQL", "Bootstrap", "Scrum", "Trabalho em equipe", "Resolução de problemas"],
+    badges: ["React", "TypeScript", "Node.js", "MySQL", "Bootstrap", "Scrum", "Trabalho em equipe", "Resolução de problemas"],
     challenges: "Integração de múltiplos módulos (administrativo, comercial, operacional), geração automática de certificados e relatórios em PDF, e tratamento de grandes volumes de dados com dashboards dinâmicos.",
     results: "Projeto completo (2º semestre). Plataforma funcional com módulos de eventos, participação, checklists prediais e de frota, geração de certificados e relatórios. Frontend responsivo com componentes reutilizáveis e backend estruturado com Node.js.",
     role: "P.O. (Product Owner) — responsável pela definição e priorização das funcionalidades, garantindo que o produto atenda às necessidades dos usuários e aos objetivos do negócio.",
@@ -41,7 +65,7 @@ const projects = [
     problem: "Sistema de apontamento de horas obsoleto que sofre com lentidão e falhas de integração, deixando a diretoria sem visibilidade sobre produtividade das equipes, performance de projetos e alocação de recursos.",
     objective: "Desenvolver uma aplicação web com sistema de controle centralizado de apontamento de horas, oferecendo visibilidade sobre esforço, custos e base de cobrança para tomada de decisão estratégica.",
     methodology: "Metodologia Scrum com sprints de 3 semanas. Primeira sprint com arquitetura monolítica para validar regras de negócio. Próximas sprints com estratégia de microsserviços. Utiliza Git Flow para versionamento.",
-    technologies: ["Java", "Spring Boot", "React", "TypeScript", "MySQL", "Scrum", "Docker", "Tailwind CSS", "Trabalho em equipe", "Keycloak", "Resolução de problemas"],
+    badges: ["Java", "Spring Boot", "React", "TypeScript", "MySQL", "Scrum", "Docker", "Tailwind CSS", "Trabalho em equipe", "Keycloak", "Resolução de problemas"],
     challenges: "Implementação de múltiplas regras de custo e faturamento por projeto e profissional, integração de microsserviços, geração de relatórios analíticos complexos, e validação de apontamentos com histórico de alterações.",
     results: "Projeto completo (3º semestre). Sistema web funcional com autenticação via Keycloak, apontamento de horas por atividade, aprovação de apontamentos, relatórios de custo vs orçamento, e dashboards com insights sobre produtividade.",
     role: "Dev Team — responsável pelo desenvolvimento de componentes React com TypeScript, integração com backend Spring Boot, e implementação de diversas funcionalidades.",
@@ -101,8 +125,14 @@ export default function Projects() {
                   {/* Tags + link */}
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <div className="flex flex-wrap gap-2">
-                      {p.technologies.map((t) => (
-                        <span key={t} className="badge bg-catawba/30 text-ribbon border-catawba/30 text-xs py-2">{t}</span>
+                      {p.badges.map((t) => (
+                        <span
+                          key={t}
+                          className="badge bg-catawba/30 text-ribbon border-catawba/30 text-xs py-2 tooltip"
+                          data-tip={getBadgeDescription(p, t)}
+                        >
+                          {t}
+                        </span>
                       ))}
                     </div>
                     <a href={p.repo} target="_blank" rel="noreferrer"
